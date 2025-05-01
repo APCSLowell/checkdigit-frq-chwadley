@@ -15,12 +15,6 @@ public class CheckDigit
      return sum;
    }
  
-  /** Returns true if numWithCheckDigit is valid, or false    
-   *  otherwise, as described in part (b). 
-   *  Precondition: The number of digits in numWithCheckDigit   
-   *  is between two and seven, inclusive.
-   *                numWithCheckDigit >= 0     
-   */     
    public static boolean isValid(int numWithCheckDigit)    
    {      
      return getCheck(numWithCheckDigit/10)==numWithCheckDigit%10;

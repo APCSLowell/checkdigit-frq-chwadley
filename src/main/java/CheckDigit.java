@@ -8,7 +8,7 @@ public class CheckDigit
    public static int getCheck(int num) 
    {  
      int sum = 0;
-     int s = Integer.toString(num);
+     String s = Integer.toString(num);
      for (int i=0;i<s.length();i++) {
         sum+=(7-i)*(Integer.parseInt(s.substring(i,i+1)));
      }

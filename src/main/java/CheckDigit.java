@@ -5,7 +5,7 @@ public class CheckDigit
      int sum = 0;
      String s = Integer.toString(num);
      for (int i=0;i<s.length();i++) {
-        sum+=((7-i)*(Integer.parseInt(s.substring(s.length()-i-1,s.length()-i))))%10;
+        sum+=(((7-i)*(Integer.parseInt(s.substring(i,i+1))))%10);
      }
      return sum;
    }
